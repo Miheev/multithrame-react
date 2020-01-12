@@ -1,0 +1,21 @@
+@import 'src/styles/material-theme';
+
+.app-player-page {
+  display: block;
+
+  iframe {
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+
+    border: none;
+  }
+
+  main button {
+    color: $white;
+  }
+
+  .video {
+    margin-top: $offset-middle;
+  }
+}

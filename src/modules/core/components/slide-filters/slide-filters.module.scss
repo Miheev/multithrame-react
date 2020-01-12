@@ -1,0 +1,41 @@
+@import 'src/styles/material-theme';
+
+.app-slide-filters {
+  @include default-field();
+
+  .label-value {
+    font-weight: 500;
+  }
+}
+
+.category-filter,
+.country-filter {
+
+  & > div {
+    position: relative;
+  }
+
+  input {
+    padding-right: $offset-middle;
+  }
+
+  button {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+
+    &:hover i {
+      font-weight: 700;
+    }
+  }
+
+  i {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.videos-per-page div {
+  border-bottom: none;
+}

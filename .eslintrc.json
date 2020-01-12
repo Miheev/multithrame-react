@@ -1,0 +1,10 @@
+{
+  "extends": ["react-app"],
+  // due to some bug rules can be configured from such custom config only
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  }
+}
+
+

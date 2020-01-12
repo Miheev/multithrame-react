@@ -1,0 +1,58 @@
+$primary: #673ab7;
+$warn: #f44336;
+$accent: #ffaa15; // default grommet instead of material #ffd740
+
+// text color on dark surface
+$white: #ffffff;
+$black: #000000;
+
+// grommet colors
+
+$brand: $primary;
+
+$accent-1: #6FFFB0;
+$accent-2: #FD6FFF;
+$accent-3: #81FCED;
+$accent-4: #FFCA58;
+
+$neutral-1: #00873D;
+$neutral-2: #3D138D;
+$neutral-3: #00739D;
+$neutral-4: #A2423D;
+
+$status-critical: #FF4040;
+$status-error: $warn;
+$status-warning: $accent;
+$status-ok: #00C781;
+$status-unknown: #CCCCCC;
+$status-disabled: #CCCCCC;
+
+$light-1: #F8F8F8;
+$light-2: #F2F2F2;
+$light-3: #EDEDED;
+$light-4: #DADADA;
+$light-5: #DADADA;
+$light-6: #DADADA;
+
+// sizes
+
+$offset-tiny: 0.3rem;
+$offset-small: 0.5rem;
+$offset-middle: 1rem;
+
+$column-width: 200px;
+
+@mixin scroll-height() {
+  height: calc(100% + var(--scroll-offset, 100%));
+}
+
+@mixin default-field() {
+  label {
+    font-size: 0.875rem;
+  }
+
+  input {
+    padding: 0;
+    font-weight: 500;
+  }
+}

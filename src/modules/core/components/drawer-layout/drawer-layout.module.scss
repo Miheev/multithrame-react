@@ -1,0 +1,33 @@
+@import "src/styles/material-theme";
+
+.app-drawer-layout {
+  display: block;
+  height: 100%;
+}
+
+.page-collapse {
+  height: 100%;
+  overflow: hidden;
+
+  background: $light-1;
+
+  // collapsible panel
+  & > div:first-child {
+    @include scroll-height();
+    flex: 0 0 auto;
+    background: $white;
+  }
+  // main content
+  & > div:last-child {
+    flex: 1 1 auto;
+    height: 100%;
+  }
+}
+
+// inside column
+
+.collapse-column {
+  height: 100%;
+  width: $column-width;
+  //border: 1px solid $light-4;
+}

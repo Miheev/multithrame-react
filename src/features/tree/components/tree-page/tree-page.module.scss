@@ -1,0 +1,33 @@
+@import 'src/styles/material-theme';
+
+.app-tree-page {
+  display: block;
+
+  header {
+    padding-top: $offset-middle;
+    padding-bottom: $offset-middle;
+  }
+  main {
+    margin-top: $offset-middle * 2;
+  }
+}
+
+.tree-height {
+  text-align: center;
+
+  & > button {
+    margin-left: $offset-middle;
+    color: $white;
+  }
+
+  .tree-height-field {
+    @include default-field();
+
+    display: inline-block;
+    text-align: left;
+
+    button {
+      margin-left: $offset-middle;
+    }
+  }
+}

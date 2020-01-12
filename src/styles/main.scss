@@ -1,0 +1,127 @@
+@import 'material-theme';
+@import '~toastr';
+
+:root {
+  --color-brand: #{$brand};
+  --color-status-error: #{$status-error};
+  --color-status-warning: #{$status-warning};
+  --color-white: #{$white};
+
+  --offset-tiny: #{$offset-tiny};
+  --offset-small: #{$offset-small};
+  --offset-middle: #{$offset-middle};
+}
+
+
+// Common
+
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:visited {
+    color: inherit;
+  }
+}
+p {
+  margin: $offset-middle 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Layout
+
+.l-one-pad {
+  padding-left: $offset-middle;
+  padding-right: $offset-middle;
+}
+
+#root {
+  padding-top: 3.5rem;
+  height: 100%;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+
+// Utils
+
+.is-excluded {
+  display: none !important;
+}
+.is-hidden {
+  visibility: hidden;
+}
+
+// Fixes
+
+#toast-container > div {
+  opacity: 0.95;
+}
+
+[id^="text-input-drop"] button {
+  padding: $offset-small $offset-middle;
+}
+
+// Blocks
+
+.card {
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  outline: none;
+  background: $white;
+  //color: #444444;
+  border: solid 1px transparentize($black, 0.67);
+  border-radius: $offset-tiny;
+  box-shadow: 0 2px 4px transparentize($black, 0.8);
+
+  .card-content {
+    padding: $offset-small;
+    outline: none;
+  }
+}
+
+.field-closable {
+  & > div {
+    position: relative;
+  }
+
+  input {
+    padding-right: $offset-middle !important;
+  }
+
+  button {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+
+    &:hover i {
+      font-weight: 700;
+    }
+
+    i {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
